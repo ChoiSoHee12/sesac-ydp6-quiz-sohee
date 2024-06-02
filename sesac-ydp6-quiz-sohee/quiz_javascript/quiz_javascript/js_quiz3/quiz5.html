@@ -90,25 +90,64 @@
     <br />
 
     <script>
-      function drawStars() {
-        // TODO: drawStars() 함수 내부 코드를 채워주세요.
-      }
+      // TODO: drawStars() 함수 내부 코드를 채워주세요.
+      
+      function drawsStars(lines) {
+    for (let i = lines; i >= 1; i--) {
+        let stars = '';
+        for (let j = 1; j <= i; j++) {
+            stars += '*';
+        }
+        console.log(stars);
+    }
+}
 
-      function drawStars2() {
-        // TODO: drawStars2() 함수 내부 코드를 채워주세요.
-      }
+      // TODO: drawStars2() 함수 내부 코드를 채워주세요.
+      
+      function drawsStars2(lines) {
+    for (let i = 1; i <= lines; i++) {
+        let stars = '';
+        for (let j = 1; j <= i; j++) {
+            stars += '*';
+        }
+        console.log(stars);
+    }
+}
 
-      function drawStars3() {
         // TODO: drawStars3() 함수 내부 코드를 채워주세요.
-      }
 
-      function drawStars4() {
+        function drawsStars3(lines) {
+    for (let i = 1; i <= lines; i++) {
+        let spaces = ' '.repeat(lines - i);
+        let stars = '*'.repeat(i * 2 - 1);
+        console.log(spaces + stars);
+    }
+}
+      
         // TODO: drawStars4() 함수 내부 코드를 채워주세요.
-      }
+      
+        function drawsStars4(lines) {
+    for (let i = 1; i <= lines; i++) {
+        let spaces = ' '.repeat(lines - i);
+        let stars = '*'.repeat(i * 2 - 1);
+        console.log(spaces + stars);
+    }
+    for (let i = lines - 1; i >= 1; i--) {
+        let spaces = ' '.repeat(lines - i);
+        let stars = '*'.repeat(i * 2 - 1);
+        console.log(spaces + stars);
+    }
+}
 
-      function drawStars5() {
         // TODO: drawStars5() 함수 내부 코드를 채워주세요.
-      }
+      
+        function drawsStars5(lines) {
+    for (let i = 1; i <= lines; i++) {
+        let spaces = ' '.repeat(lines - i);
+        let stars = '*'.repeat(lines);
+        console.log(spaces + stars);
+    }
+}
 
       // TODO: 해당 html 파일을 실행한 브라우저 콘솔창에서 drawStars ~ drawStars5 함수를 호출해주세요!
       // drawStars(3);
